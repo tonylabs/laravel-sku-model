@@ -1,0 +1,46 @@
+{
+	"name": "tonylabs/laravel-sku-model",
+	"description": "Make Laravel Eloquent Model has SKU property.",
+	"keywords": [
+		"eloquent",
+		"laravel",
+		"sku",
+		"tonylabs",
+		"model",
+		"ecommerce"
+	],
+	"homepage": "https://github.com/tonylabs/laravel-sku-model",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Tony Wang",
+			"email": "tony.wang@tonylabs.com",
+			"homepage": "https://www.tonylabs.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^8.0",
+		"illuminate/support": "^9.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"TONYLABS\\SKU\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"TONYLABS\\SKU\\Tests\\": "tests"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"TONYLABS\\SKU\\SKUServiceProvider"
+			]
+		}
+	}
+}
