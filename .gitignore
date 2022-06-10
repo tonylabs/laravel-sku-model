@@ -27,3 +27,4 @@ Homestead.json
 
 # macOS Finder
 .DS_Store
+composer.lock
