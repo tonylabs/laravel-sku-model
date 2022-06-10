@@ -22,7 +22,7 @@ class Reactor implements Jsonable, Renderable, ReactorContract
     public function render(): string
     {
         $source = $this->getSourceString();
-        return $this->makeSku($source, $this->options->separator, $this->options->unique);
+        return $this->generate($source, $this->options->separator, $this->options->unique);
     }
 
     protected function getSourceString(): string
